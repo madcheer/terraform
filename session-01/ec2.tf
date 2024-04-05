@@ -1,8 +1,8 @@
 resource "aws_instance" "web" {
-  ami           = "ami-08e7a9a48c6b1b4a2"
-  instance_type = "t3.micro"
-
+  ami           = "ami-0f3c7d07486cad139"
+  instance_type = "t2.micro"
+  
   tags = {
-    Name = "HelloTerraform"
+    name = "hello world"
   }
 }
