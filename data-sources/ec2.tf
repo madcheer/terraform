@@ -1,8 +1,8 @@
 resource "aws_instance" "web" {
-  ami = "ami-0f3c7d07486cad139"
+  ami = data.aws_ami.centos8.id
   instance_type = "t2.micro"
   
   tags = {
-    name = "hello world"
+    Name = "Data-Source"
   }
 }
